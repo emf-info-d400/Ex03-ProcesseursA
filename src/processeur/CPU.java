@@ -1,4 +1,4 @@
-package processeur.models;
+package processeur;
 
 import java.text.DecimalFormat;
 
@@ -17,25 +17,28 @@ public class CPU {
      * Cette constante (-1.0) représente une performance MIPS (Millions Instructions
      * Per Second) inconnue.
      */
-    public static final double UNKNOWN_MIPS = -1.0;
+    // VOTRE CODE ICI...
 
     /**
      * Attribut qui représente le nom du CPU.
      */
-    private final String nom;
+    // VOTRE CODE ICI...
+
     /**
      * Attribut qui représente l'année de sortie du CPU.
      */
-    private final int annee;
+    // VOTRE CODE ICI...
+
     /**
      * Attribut qui représente le nombre de transistors utilisés dans le CPU.
      */
-    private final long transistors;
+    // VOTRE CODE ICI...
+
     /**
      * Attribut qui représente la performance en MIPS (Millions Instructions Per
      * Second) du CPU.
      */
-    private final double mips;
+    // VOTRE CODE ICI...
 
     /**
      * Constructeur de la classe CPU à utiliser lorsqu'on connaît la valeur de
@@ -48,10 +51,7 @@ public class CPU {
      *                    du CPU
      */
     public CPU(String nom, int annee, long transistors, double mips) {
-        this.nom = nom;
-        this.annee = annee;
-        this.transistors = transistors;
-        this.mips = mips;
+        // VOTRE CODE ICI...
     }
 
     /**
@@ -65,10 +65,7 @@ public class CPU {
      * @param transistors le nombre de transistors utilisés dans le CPU
      */
     public CPU(String nom, int annee, long transistors) {
-        this.nom = nom;
-        this.annee = annee;
-        this.transistors = transistors;
-        this.mips = UNKNOWN_MIPS;
+        // VOTRE CODE ICI...
     }
 
     /**
@@ -77,7 +74,7 @@ public class CPU {
      * @return la valeur de l'attribut nom
      */
     public String getNom() {
-        return nom;
+        // VOTRE CODE ICI...
     }
 
     /**
@@ -87,7 +84,7 @@ public class CPU {
      */
 
     public int getAnnee() {
-        return annee;
+        // VOTRE CODE ICI...
     }
 
     /**
@@ -96,7 +93,7 @@ public class CPU {
      * @return la valeur de l'attribut transistors
      */
     public long getTransistors() {
-        return transistors;
+        // VOTRE CODE ICI...
     }
 
     /**
@@ -105,32 +102,7 @@ public class CPU {
      * @return la valeur de l'attribut mips
      */
     public double getMips() {
-        return mips;
-    }
-
-    
-    /** 
-     * Méthode d'affichage de notre CPU. Cette méthode est appelée automatiquement par la méthode println() de la classe System.out.
-     * 
-     * @return String
-     */
-    @Override
-    public String toString() {
-        // Création d'un objet DecimalFormat en lui donnant le format souhaité pour les entiers
-        DecimalFormat myDecimalFormatter = new DecimalFormat("#,###");
-
-        // Création d'un objet DecimalFormat en lui donnant le format souhaité pour les nombres réels
-        DecimalFormat myFloatFormatter = new DecimalFormat("#,##0.00");
-
-        String cpuEnUnString = "";
-        if (mips == UNKNOWN_MIPS) {
-            cpuEnUnString = "En " + annee + " le CPU " + nom + " avec " + myDecimalFormatter.format(transistors) +
-                    " transistors et une puissance de calcul inconnue.";
-        } else {
-            cpuEnUnString = "En " + annee + " le CPU " + nom + " avec " + myDecimalFormatter.format(transistors) +
-                    " transistors et une puissance de calcul de " + myFloatFormatter.format(mips) + " mips.";
-        }
-        return cpuEnUnString;
+        // VOTRE CODE ICI...
     }
 
 }
