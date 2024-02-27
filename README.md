@@ -38,7 +38,7 @@ class CPU {
     +getTransistors() long
 }
 note for Processeur "NBRE_CPU = 20"
-note for CPU "UNKNOWN_MIPS = .1.0"
+note for CPU "UNKNOWN_MIPS = -1.0"
 ```
 ### Javadoc
 La Javadoc se trouve directement dans les classes Java. Il ne vous reste plus qu'à remplacer les commentaires `// VOTRE CODE ICI...`
